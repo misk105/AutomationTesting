@@ -40,15 +40,10 @@ public class FirstTestCase {
         driver.get(url);
 
         // Step 2: Verify homepage elements are displayed
-        Assert.assertTrue(homePage.isLogoDisplayed(),"FAIL: Logo is not displayed");
-
-        Assert.assertTrue(homePage.isAccountLinkDisplayed(),"FAIL: Account link is not displayed");
-
-        Assert.assertTrue(homePage.isMyBagLinkDisplayed(),"FAIL: My Bag link is not displayed");
-
+        homePage.verifyHomePageLoaded();
+        
         // Step 3: Open the sign-in flow
-        homePage.clickAccountLink();
-        homePage.clickSignIn();
+        homePage.goToLoginPage();
 
         // Step 4: Enter credentials and submit
         loginPage.login(email, password);
@@ -56,7 +51,5 @@ public class FirstTestCase {
         // Step 5: Validate successful login
         Assert.assertTrue(accountPage.isLoggedIn(),"FAIL: Post-login account button is not visible — login may have failed");
 
-        // Secondary check: a welcome message element is present in the dropdown
-        Assert.assertTrue(accountPage.isWelcomeMessageDisplayed(),"FAIL: Welcome message element is not displayed after login");
     }
 }

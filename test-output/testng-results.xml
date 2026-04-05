@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-05T10:24:31 GMT+02:00" name="Default suite" finished-at="2026-04-05T10:24:43 GMT+02:00" duration-ms="12108">
+  <suite started-at="2026-04-05T11:23:20 GMT+02:00" name="Default suite" finished-at="2026-04-05T11:23:30 GMT+02:00" duration-ms="10163">
     <groups>
     </groups>
-    <test started-at="2026-04-05T10:24:31 GMT+02:00" name="Default test" finished-at="2026-04-05T10:24:43 GMT+02:00" duration-ms="12108">
+    <test started-at="2026-04-05T11:23:20 GMT+02:00" name="Default test" finished-at="2026-04-05T11:23:30 GMT+02:00" duration-ms="10163">
       <class name="pages.FirstTestCase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pages.FirstTestCase@4c12331b]" started-at="2026-04-05T10:24:31 GMT+02:00" name="setUp" finished-at="2026-04-05T10:24:32 GMT+02:00" duration-ms="1539" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pages.FirstTestCase@3b69e7d1]" started-at="2026-04-05T11:23:20 GMT+02:00" name="setUp" finished-at="2026-04-05T11:23:22 GMT+02:00" duration-ms="2014" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogin()[pri:0, instance:pages.FirstTestCase@4c12331b]" started-at="2026-04-05T10:24:32 GMT+02:00" name="testLogin" finished-at="2026-04-05T10:24:42 GMT+02:00" duration-ms="9834" status="PASS">
+        <test-method signature="testLogin()[pri:0, instance:pages.FirstTestCase@3b69e7d1]" started-at="2026-04-05T11:23:22 GMT+02:00" name="testLogin" finished-at="2026-04-05T11:23:29 GMT+02:00" duration-ms="7545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.FirstTestCase@4c12331b]" started-at="2026-04-05T10:24:42 GMT+02:00" name="tearDown" finished-at="2026-04-05T10:24:43 GMT+02:00" duration-ms="683" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pages.FirstTestCase@3b69e7d1]" started-at="2026-04-05T11:23:29 GMT+02:00" name="tearDown" finished-at="2026-04-05T11:23:30 GMT+02:00" duration-ms="564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

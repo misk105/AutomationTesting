@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class HomePage {
 
@@ -41,5 +42,16 @@ public class HomePage {
 
     public void clickSignIn() {
         wait.until(ExpectedConditions.elementToBeClickable(signInLink)).click();
+    }
+    
+    public void verifyHomePageLoaded() {
+        Assert.assertTrue(isLogoDisplayed(), "Logo is not displayed");
+        Assert.assertTrue(isAccountLinkDisplayed(), "Account link is not displayed");
+        Assert.assertTrue(isMyBagLinkDisplayed(), "My Bag link is not displayed");
+    }
+
+    public void goToLoginPage() {
+        clickAccountLink();
+        clickSignIn();
     }
 }
